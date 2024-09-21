@@ -60,23 +60,23 @@ export default function Form({ data, setData }) {
       </form>
       {data ? (
         <section className="info-section">
-          <div>
-            <p>IP Address</p>
-            <p>{data.ip}</p>
+          <div className="info-part">
+            <p className="small-text">IP ADDRESS</p>
+            <div className="bold-text border">{data.ip}</div>
           </div>
-          <div>
-            <p>Location</p>
-            <p>
+          <div className="info-part">
+            <p className="small-text">LOCATION</p>
+            <div className="bold-text border">
               {data.location?.city}, {data.location?.country}
-            </p>
+            </div>
           </div>
-          <div>
-            <p>Time Zone</p>
-            <p>UTC {data.location?.timezone}</p>
+          <div className="info-part">
+            <p className="small-text">TIME ZONE</p>
+            <div className="bold-text border">UTC {data.location?.timezone}</div>
           </div>
-          <div>
-            <p>ISP</p>
-            <p>{data.isp}</p>
+          <div className="info-part">
+            <p className="small-text">ISP</p>
+            <div className="bold-text border">{data.isp}</div>
           </div>
         </section>
       ) : (
