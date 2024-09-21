@@ -1,10 +1,12 @@
 #root {
 width: 100vw;
+font-family: "Outfit", sans-serif;
 }
 .leaflet-container {
   height: 80vh; 
   width: 100vw; 
   object-fit: cover;
+  border: none;
 }
 .form-container{
   background-image: url("src/assets/pattern-bg-desktop.png");
@@ -14,5 +16,50 @@ width: 100vw;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 1rem;
+}
+.info-section{
+  display: flex;
+  background-color: #fff;
+  gap:1.5rem;
+  border-radius: 0.5rem;
+  
+}
+form{
+  text-align: center;
+  line-height: 3rem;
+}
+.head{
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 500;
+}
+.input-container{
+  width: 25vw;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: lightgrey;
+}
+#ipAddress{
+  width: 80%;
+  height: 100%;
+  border-radius: 0.7rem 0 0 0.7rem;
+  border:none;
+  font-size: 0.9rem;
+  padding-left: 1rem;
+}
+.submit{
+  width: 10%;
+  height: 109%;
+  border-radius: 0 0.7rem 0.7rem 0;
+  border: none;
+  background-color:black;
+  color: #fff;
+  text-align: center;
+}
+.bold-text{
+
 }
 
