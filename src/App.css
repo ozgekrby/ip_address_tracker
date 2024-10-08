@@ -11,7 +11,7 @@ font-family: "Outfit", sans-serif;
   z-index: 0;
 }
 .form-container{
-  background-image: url("src/assets/pattern-bg-desktop.png");
+  background-image: url("/pattern-bg-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
